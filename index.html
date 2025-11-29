@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CUSAATHI - Coming Soon</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+    body { font-family: 'Inter', sans-serif; }
+    .gradient-text { 
+      background: linear-gradient(135deg, #10b981 0%, #059669 50%, #84cc16 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .bg-grid-pattern {
+      background-image: linear-gradient(rgba(16,185,129,0.03) 1px, transparent 1px),
+                        linear-gradient(90deg, rgba(16,185,129,0.03) 1px, transparent 1px);
+      background-size: 40px 40px;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-900 overflow-x-hidden">
+
+  <!-- Main Coming Soon Section -->
+  <section class="min-h-screen flex items-center justify-center relative overflow-hidden py-12 sm:py-16 md:py-20 lg:py-24">
+    
+    <!-- Background Decorations -->
+    <div class="pointer-events-none absolute inset-0">
+      <div class="absolute -top-40 -left-40 w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-96 bg-emerald-200/30 blur-3xl rounded-full animate-pulse" style="animation-duration: 6s;"></div>
+      <div class="absolute -bottom-48 right-0 w-80 h-80 sm:w-96 sm:h-96 lg:w-[28rem] lg:h-[28rem] bg-lime-200/30 blur-3xl rounded-full animate-pulse" style="animation-duration: 8s; animation-delay: -2s;"></div>
+      <div class="absolute inset-0 bg-grid-pattern opacity-20"></div>
+    </div>
+
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl text-center relative z-10">
+      
+      <!-- Badge -->
+      <div class="inline-flex items-center gap-2 rounded-full border-2 border-emerald-200 bg-white/95 px-4 sm:px-5 py-2.5 text-sm font-semibold text-emerald-700 shadow-lg backdrop-blur-sm mb-8">
+        <svg class="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"></path>
+        </svg>
+        <span>Launching Soon for CU Students</span>
+      </div>
+
+      <!-- Main Heading -->
+      <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black tracking-tight mb-6 leading-tight">
+        CUSAATHI
+        <span class="block gradient-text mt-2">is Almost Here</span>
+      </h1>
+
+      <!-- Subtitle -->
+      <p class="text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-600 font-medium mb-2 max-w-2xl mx-auto leading-relaxed">
+        Your complete learning companion for University of Calcutta
+      </p>
+      <p class="text-base sm:text-lg md:text-xl text-emerald-700 font-semibold mb-12 max-w-xl mx-auto">
+        151+ colleges • 60+ departments • 10K+ students waiting
+      </p>
+
+      <!-- Countdown Timer -->
+      <div class="bg-white/95 border border-emerald-100/80 rounded-3xl p-6 sm:p-8 md:p-10 lg:p-12 shadow-xl shadow-emerald-100/60 backdrop-blur-md mb-12 max-w-4xl mx-auto">
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 md:gap-6">
+          <div class="text-center">
+            <div class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-emerald-600 mb-1 gradient-text" id="days">00</div>
+            <div class="text-xs sm:text-sm uppercase tracking-wider font-semibold text-gray-500">Days</div>
+          </div>
+          <div class="text-center">
+            <div class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-emerald-600 mb-1 gradient-text" id="hours">00</div>
+            <div class="text-xs sm:text-sm uppercase tracking-wider font-semibold text-gray-500">Hours</div>
+          </div>
+          <div class="text-center">
+            <div class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-emerald-600 mb-1 gradient-text" id="minutes">00</div>
+            <div class="text-xs sm:text-sm uppercase tracking-wider font-semibold text-gray-500">Minutes</div>
+          </div>
+          <div class="text-center">
+            <div class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-emerald-600 mb-1 gradient-text" id="seconds">00</div>
+            <div class="text-xs sm:text-sm uppercase tracking-wider font-semibold text-gray-500">Seconds</div>
+          </div>
+        </div>
+      </div>
+  </section>
+</body>
+</html>
